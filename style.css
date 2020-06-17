@@ -76,34 +76,57 @@ img {
 /* tablet view */
 @media screen and (max-width: 800px) {
     body {
-        background-color: green;
+        color: rgb(45, 45, 45);
+        background-color: #bcc6ee;
         font-size: 1.1rem;
+    }
+
+    .container.grey {
+        background-color: #2c4459;
+        color: white;
     }
 
     .container .row {
         width: 90%;
-        margin: 50px auto;
+        margin: 0px auto;
+        padding: 20px 0;
     }
 
-    .container .row:last-child {
-        margin-bottom: 0px;
+    /* #why .row {
+        margin-bottom: 5px;
+    } */
+
+
+    #lezioni .row > .left {
+        margin-right: 20px;
     }
 
-    #steps .row>.left {
-        margin-right: 30px;
+    #lezioni .row > .left,
+    #lezioni .row > .right {
+        float: left;
+        width: calc(100% / 2 - 10px);
+
     }
 
+
+    #steps .row>.left,
     #steps .row>.central {
         margin-right: 30px;
     }
 
 
 
+
     #steps .row>.left,
     #steps .row>.central,
     #steps .row>.right {
-        float: left;
         width: calc(100% / 3 - 20px);
+    }
+
+    #why .row>.first,
+    #why .row>.second,
+    #why .row>.third {
+        margin: 20px auto;
     }
 
 
@@ -116,14 +139,25 @@ img {
         padding: 10px;
     }
 
+    #why hr {
+        margin-top: 20px;
+        border: 1px solid #bcc6ee;
+    }
+
 }
 
 
 /* mobile view */
 @media screen and (max-width: 480px) {
     body {
-        background-color: red;
+        color: rgb(45, 45, 45);
+        background-color: cornsilk ;
         font-size: 1.4rem;
+    }
+
+    .container.grey {
+        color: rgb(45, 45, 45);
+        background-color: #ddc28d;
     }
 
     .container .row {
@@ -142,7 +176,15 @@ img {
     #steps .row > .right {
         clear: both;
         width: 100%;
-
     }
+
+    #why hr {
+        margin-top: 20px;
+        border: 1px solid cornsilk;
+    }
+
+
+
+
 
 }
