@@ -1,88 +1,120 @@
 .row {
-  width: 992px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
 }
 
 /* BLOCCO LEZIONI */
 #lezioni .row>.left,
 #lezioni .row>.right {
-  width: 50%;
-  float: left;
+    width: 50%;
+    float: left;
 }
 
 #lezioni .row img {
-  /* per centrare orizzontalmente */
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+    /* per centrare orizzontalmente */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #lezioni {
-  text-align: center;
+    text-align: center;
 }
 
 /* BLOCCO STEPS */
 #steps .row>.left,
 #steps .row>.central,
 #steps .row>.right {
-  float: left;
-  width: 33%;
+    float: left;
+    width: 33%;
 }
 
 #steps {
-  text-align: center;
+    text-align: center;
 }
 
 /* BLOCCO PERCHE */
 #why {
-  text-align: center;
+    text-align: center;
 }
 
 #why .row>.first,
 #why .row>.second,
 #why .row>.third {
-  width: 100%;
-  margin-top: 80px;
+    width: 100%;
+    margin-top: 80px;
 }
 
 #why .row img {
-  background-color: #428bca;
-  border-radius: 50%;
-  padding: 30px
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 30px
 }
 
 /* COMMON */
 .row::after {
-  content: '';
-  display: table;
-  clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .container.grey {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 img {
-  height: 200px;
+    height: 200px;
 }
 
 .clear {
-  clear: both;
+    clear: both;
 }
 
 
-/* @media screen and (max-width: 800px) {
+/* tablet view */
+@media screen and (max-width: 800px) {
+    body {
+        background-color: green;
+    }
 
+    .container .row {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0;
+    }
 
-} */
+    img {
+        height: 150px;
+    }
+
+}
 
 
 /* mobile view */
 @media screen and (max-width: 480px) {
     body {
-        background-color: black;
+        background-color: red;
+        font-size: 1.2rem;
     }
 
+    .container .row {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #lezioni .row > .left,
+    #lezioni .row > .right {
+        clear: both;
+        width: 100%;
+    }
+
+    #steps .row > .left,
+    #steps .row > .central,
+    #steps .row > .right {
+        clear: both;
+        width: 100%;
+
+    }
 }
